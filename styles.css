@@ -132,7 +132,7 @@ header{
 }
 
 .welcome > div > p:last-child{
-    margin: 0;
+    margin: 1;
     font-size: 1.2rem;
 }
 
@@ -152,3 +152,80 @@ header{
     cursor: pointer;
     font-weight: bold;
 }
+
+
+.content{
+    background-color: rgb(241, 240, 240);
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    align-items: start;
+    align-content: start;
+}
+
+.projects{
+    grid-row: span 2;
+    padding: 1em;
+}
+
+.projects > .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 1em;
+}
+
+.projects > h2, .announcements>h2{
+    font-size: 1.125rem;
+}
+
+.card{
+    background-color: white;
+    border-radius: 8px;
+    border-left: 5px #f0b429;
+    padding: 1.5em 1em;
+    box-shadow: rgba(0,0,0,0.15) 2.4px 2.4px 3.2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card-heading{
+    font-weight: bold;
+    margin: 0;
+}
+
+.card-description{
+    opacity: 0.9;
+    margin: 0;
+}
+
+.announcements{
+    padding: 1em 1em 1em 0.1em;
+    
+}
+
+.announcements > ul{
+    background-color: white;
+    padding: 1em 1.5em;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.15) 2.4px 2.4px 3.2px;
+}
+
+.announcements >ul >li{
+    padding: 0.5em;
+}
+
+.announcements >ul >li >h4{
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.announcements >ul >li >p{
+    font-size: 0.8rem;
+    opacity: 0.9rem;
+    margin: 0;
+}
+
+.announcements >ul >li + li{
+    border-top: 1px solid black;
+}
+
