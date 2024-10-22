@@ -150,4 +150,5 @@ header{
     color: white;
     padding: 0.5em 2em;
     cursor: pointer;
+    font-weight: bold;
 }
