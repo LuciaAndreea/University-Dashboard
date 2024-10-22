@@ -70,3 +70,84 @@ ul{
 .sidebar .lists >ul >li + li{
     margin-top: 1em;
 }
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8fr;
+}
+
+header{
+    padding: 2em;
+    display: grid;
+    gap: 20px 2px;
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: 2;
+    border-bottom: 3px solid rgb(211,210,210);
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.search > svg{
+    max-width: 25px;
+    fill: black;
+}
+
+.search input{
+    border: none;
+    border-radius: 1em;
+    background-color: #e2e8f0;
+    width: 100%;
+    padding: 0.5em;
+}
+
+.status{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1em;
+    font-weight: bold;
+}
+
+.status > svg{
+    max-width: 25px;
+    cursor: pointer;
+    fill:black;
+}
+
+.welcome{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-weight: bold;
+}
+
+.welcome > div > p:first-child{
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+.welcome > div > p:last-child{
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.header-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5em;
+}
+
+.header-buttons > button{
+    border: none;
+    border-radius: 1.5em;
+    background-color: orange;
+    color: white;
+    padding: 0.5em 2em;
+    cursor: pointer;
+}
